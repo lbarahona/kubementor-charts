@@ -2,11 +2,11 @@
 
 Official Helm charts for [KubeMentor](https://kubementor.io) - AI-powered Kubernetes observability.
 
-## Usage
+## Quick Install
 
 ```bash
 # Add the repo
-helm repo add kubementor https://charts.kubementor.io
+helm repo add kubementor https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages
 helm repo update
 
 # Install KubeMentor (all components)
@@ -14,24 +14,37 @@ helm install kubementor kubementor/kubementor \
   --namespace kubementor \
   --create-namespace
 
-# Or install individual components
-helm install kubementor-agent kubementor/kubementor-agent -n kubementor
-helm install kubementor-api kubementor/kubementor-api -n kubementor
-helm install kubementor-dashboard kubementor/kubementor-dashboard -n kubementor
+# Check status
+kubectl get pods -n kubementor
 ```
 
 ## Available Charts
 
 | Chart | Description |
 |-------|-------------|
-| `kubementor` | All-in-one installation (recommended) |
-| `kubementor-agent` | Metrics collector agent |
-| `kubementor-api` | Backend API server |
-| `kubementor-dashboard` | Web dashboard |
+| `kubementor/kubementor` | All-in-one installation (recommended) |
+| `kubementor/kubementor-agent` | Metrics collector agent |
+| `kubementor/kubementor-api` | Backend API server |
+| `kubementor/kubementor-dashboard` | Web dashboard |
 
 ## Configuration
 
-See the [values.yaml](https://github.com/lbarahona/kubementor-platform/blob/master/helm/kubementor/values.yaml) for configuration options.
+See the [values.yaml](https://github.com/lbarahona/kubementor-platform/blob/master/helm/kubementor/values.yaml) for all options.
+
+### Common Options
+
+```bash
+# Set cluster name
+helm install kubementor kubementor/kubementor \
+  --set global.clusterName="production" \
+  -n kubementor --create-namespace
+
+# Enable ingress
+helm install kubementor kubementor/kubementor \
+  --set dashboard.ingress.enabled=true \
+  --set dashboard.ingress.hosts[0].host=kubementor.example.com \
+  -n kubementor --create-namespace
+```
 
 ## Documentation
 
@@ -41,4 +54,3 @@ See the [values.yaml](https://github.com/lbarahona/kubementor-platform/blob/mast
 ## License
 
 Apache 2.0
-
