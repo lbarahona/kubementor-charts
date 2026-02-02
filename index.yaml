@@ -1,0 +1,100 @@
+apiVersion: v1
+entries:
+  kubementor:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-02-02T15:38:32.863687437-06:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.38
+    - alias: backend
+      condition: backend.enabled
+      name: kubementor-api
+      repository: file://../backend
+      version: 0.1.0
+    - alias: agent
+      condition: agent.enabled
+      name: kubementor-agent
+      repository: file://../agent
+      version: 0.1.0
+    - alias: dashboard
+      condition: dashboard.enabled
+      name: kubementor-dashboard
+      repository: file://../dashboard
+      version: 0.1.0
+    description: KubeMentor - AI-powered Kubernetes observability platform
+    digest: 142c78ed29cbc3c7e32e534720d9e799fecde531f6deafa42ecd2e1d7dba61a4
+    home: https://kubementor.io
+    icon: https://kubementor.io/icon.png
+    keywords:
+    - kubernetes
+    - monitoring
+    - ai
+    - observability
+    - sre
+    - devops
+    maintainers:
+    - email: lester@kubementor.io
+      name: Lester Barahona
+    name: kubementor
+    sources:
+    - https://github.com/lbarahona/kubementor-platform
+    type: application
+    urls:
+    - https://charts.kubementor.io/kubementor-0.1.0.tgz
+    version: 0.1.0
+  kubementor-agent:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-02-02T15:38:32.864299714-06:00"
+    description: KubeMentor Agent - Collects Kubernetes metrics for AI analysis
+    digest: 50eb1e6a70f04ff3b1b2ea1f7510d51901414e922092a6a9a6bb1337bea4695d
+    keywords:
+    - kubernetes
+    - monitoring
+    - ai
+    - observability
+    maintainers:
+    - email: lester@kubementor.io
+      name: Lester Barahona
+    name: kubementor-agent
+    type: application
+    urls:
+    - https://charts.kubementor.io/kubementor-agent-0.1.0.tgz
+    version: 0.1.0
+  kubementor-api:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-02-02T15:38:32.865009861-06:00"
+    description: KubeMentor Backend API - AI-powered Kubernetes recommendations
+    digest: ba38bae059452f0299bb0d882685188cf7fef2f3562f4a026580cce7cbb10ad4
+    keywords:
+    - kubernetes
+    - monitoring
+    - ai
+    - recommendations
+    - sre
+    maintainers:
+    - email: lester@kubementor.io
+      name: Lester Barahona
+    name: kubementor-api
+    sources:
+    - https://github.com/lbarahona/kubementor-platform
+    type: application
+    urls:
+    - https://charts.kubementor.io/kubementor-api-0.1.0.tgz
+    version: 0.1.0
+  kubementor-dashboard:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-02-02T15:38:32.865516694-06:00"
+    description: KubeMentor Dashboard - Web UI for Kubernetes monitoring
+    digest: c37949dfa277fbae8d806dc72457bbf4f6b0ba9612507b1b6a20a4a91ab151c6
+    name: kubementor-dashboard
+    type: application
+    urls:
+    - https://charts.kubementor.io/kubementor-dashboard-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-02-02T15:38:32.853400242-06:00"
