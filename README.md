@@ -41,3 +41,4 @@ See the [values.yaml](https://github.com/lbarahona/kubementor-platform/blob/mast
 ## License
 
 Apache 2.0
+
