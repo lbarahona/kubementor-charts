@@ -3,10 +3,186 @@ entries:
   kubementor:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-02-02T15:38:32Z"
+    created: "2026-02-03T12:48:25.121216129-06:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.38
+    - alias: backend
+      condition: backend.enabled
+      name: kubementor-api
+      repository: file://../backend
+      version: 0.1.0
+    - alias: agent
+      condition: agent.enabled
+      name: kubementor-agent
+      repository: file://../agent
+      version: 0.1.0
+    - alias: dashboard
+      condition: dashboard.enabled
+      name: kubementor-dashboard
+      repository: file://../dashboard
+      version: 0.1.0
     description: KubeMentor - AI-powered Kubernetes observability platform
-    digest: 142c78ed29cbc3c7e32e534720d9e799fecde531f6deafa42ecd2e1d7dba61a4
+    digest: f540c922b8387a9e63f3569b2313ae10f50026dc3710e153de6634f9c8166edb
     home: https://kubementor.io
+    icon: https://kubementor.io/icon.png
+    keywords:
+    - kubernetes
+    - monitoring
+    - ai
+    - observability
+    - sre
+    - devops
+    maintainers:
+    - email: lester@kubementor.io
+      name: Lester Barahona
+    name: kubementor
+    sources:
+    - https://github.com/lbarahona/kubementor-platform
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-02-03T12:48:25.11031532-06:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.38
+    - alias: backend
+      condition: backend.enabled
+      name: kubementor-api
+      repository: file://../backend
+      version: 0.1.0
+    - alias: agent
+      condition: agent.enabled
+      name: kubementor-agent
+      repository: file://../agent
+      version: 0.1.0
+    - alias: dashboard
+      condition: dashboard.enabled
+      name: kubementor-dashboard
+      repository: file://../dashboard
+      version: 0.1.0
+    description: KubeMentor - AI-powered Kubernetes observability platform
+    digest: bccb6c3236c9bc396302ff5258023b6a7575a4654f98263367189c774c0efe9a
+    home: https://kubementor.io
+    icon: https://kubementor.io/icon.png
+    keywords:
+    - kubernetes
+    - monitoring
+    - ai
+    - observability
+    - sre
+    - devops
+    maintainers:
+    - email: lester@kubementor.io
+      name: Lester Barahona
+    name: kubementor
+    sources:
+    - https://github.com/lbarahona/kubementor-platform
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-02-03T12:48:25.098105694-06:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.38
+    - alias: backend
+      condition: backend.enabled
+      name: kubementor-api
+      repository: file://../backend
+      version: 0.1.0
+    - alias: agent
+      condition: agent.enabled
+      name: kubementor-agent
+      repository: file://../agent
+      version: 0.1.0
+    - alias: dashboard
+      condition: dashboard.enabled
+      name: kubementor-dashboard
+      repository: file://../dashboard
+      version: 0.1.0
+    description: KubeMentor - AI-powered Kubernetes observability platform
+    digest: 3d1ed59cfd9e7e8724c242bbcf5e5736adeefe1f99979507b38350a36fed6729
+    home: https://kubementor.io
+    icon: https://kubementor.io/icon.png
+    keywords:
+    - kubernetes
+    - monitoring
+    - ai
+    - observability
+    - sre
+    - devops
+    maintainers:
+    - email: lester@kubementor.io
+      name: Lester Barahona
+    name: kubementor
+    sources:
+    - https://github.com/lbarahona/kubementor-platform
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-02-03T12:48:25.082902536-06:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.38
+    - alias: backend
+      condition: backend.enabled
+      name: kubementor-api
+      repository: file://../backend
+      version: 0.1.0
+    - alias: agent
+      condition: agent.enabled
+      name: kubementor-agent
+      repository: file://../agent
+      version: 0.1.0
+    - alias: dashboard
+      condition: dashboard.enabled
+      name: kubementor-dashboard
+      repository: file://../dashboard
+      version: 0.1.0
+    description: KubeMentor - AI-powered Kubernetes observability platform
+    digest: cd39a637daa20c134ce94dd1bfeec96ab0bcc512b263c7b87a26c74e5e442ba1
+    home: https://kubementor.io
+    icon: https://kubementor.io/icon.png
+    keywords:
+    - kubernetes
+    - monitoring
+    - ai
+    - observability
+    - sre
+    - devops
+    maintainers:
+    - email: lester@kubementor.io
+      name: Lester Barahona
+    name: kubementor
+    sources:
+    - https://github.com/lbarahona/kubementor-platform
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-0.1.0.tgz
+    version: 0.1.0
+  kubementor-agent:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-02-03T12:48:25.121840925-06:00"
+    description: KubeMentor Agent - Collects Kubernetes metrics for AI analysis
+    digest: 02bec8e6848888c1fbd4471d5bd36c20a31aa27ec61ef307a71617e11cd32f40
     keywords:
     - kubernetes
     - monitoring
@@ -15,52 +191,42 @@ entries:
     maintainers:
     - email: lester@kubementor.io
       name: Lester Barahona
-    name: kubementor
-    urls:
-    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-0.1.0.tgz
-    version: 0.1.0
-  kubementor-agent:
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2026-02-02T15:38:32Z"
-    description: KubeMentor Agent - Collects Kubernetes metrics for AI analysis
-    digest: 50eb1e6a70f04ff3b1b2ea1f7510d51901414e922092a6a9a6bb1337bea4695d
-    keywords:
-    - kubernetes
-    - monitoring
-    - ai
-    maintainers:
-    - email: lester@kubementor.io
-      name: Lester Barahona
     name: kubementor-agent
+    type: application
     urls:
     - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-agent-0.1.0.tgz
     version: 0.1.0
   kubementor-api:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-02-02T15:38:32Z"
+    created: "2026-02-03T12:48:25.1225407-06:00"
     description: KubeMentor Backend API - AI-powered Kubernetes recommendations
-    digest: ba38bae059452f0299bb0d882685188cf7fef2f3562f4a026580cce7cbb10ad4
+    digest: f23ee193e0015252b073d6d5df0b50d2bca44c7407e3e196394ad741a896a464
     keywords:
     - kubernetes
-    - api
+    - monitoring
     - ai
+    - recommendations
+    - sre
     maintainers:
     - email: lester@kubementor.io
       name: Lester Barahona
     name: kubementor-api
+    sources:
+    - https://github.com/lbarahona/kubementor-platform
+    type: application
     urls:
     - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-api-0.1.0.tgz
     version: 0.1.0
   kubementor-dashboard:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-02-02T15:38:32Z"
+    created: "2026-02-03T12:48:25.122974102-06:00"
     description: KubeMentor Dashboard - Web UI for Kubernetes monitoring
-    digest: c37949dfa277fbae8d806dc72457bbf4f6b0ba9612507b1b6a20a4a91ab151c6
+    digest: 92c4550204ca2d7765714a361380d2e22223acc67c69e8b138947140744aadeb
     name: kubementor-dashboard
+    type: application
     urls:
     - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-dashboard-0.1.0.tgz
     version: 0.1.0
-generated: "2026-02-02T15:38:32Z"
+generated: "2026-02-03T12:48:25.065119623-06:00"
