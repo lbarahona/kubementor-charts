@@ -43,7 +43,7 @@ entries:
     - https://github.com/lbarahona/kubementor-platform
     type: application
     urls:
-    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-0.1.3.tgz
+    - https://charts.kubementor.io/kubementor-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.0
@@ -87,7 +87,7 @@ entries:
     - https://github.com/lbarahona/kubementor-platform
     type: application
     urls:
-    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-0.1.2.tgz
+    - https://charts.kubementor.io/kubementor-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.0
@@ -131,7 +131,7 @@ entries:
     - https://github.com/lbarahona/kubementor-platform
     type: application
     urls:
-    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-0.1.1.tgz
+    - https://charts.kubementor.io/kubementor-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
@@ -175,7 +175,7 @@ entries:
     - https://github.com/lbarahona/kubementor-platform
     type: application
     urls:
-    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-0.1.0.tgz
+    - https://charts.kubementor.io/kubementor-0.1.0.tgz
     version: 0.1.0
   kubementor-agent:
   - apiVersion: v2
@@ -194,7 +194,7 @@ entries:
     name: kubementor-agent
     type: application
     urls:
-    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-agent-0.1.0.tgz
+    - https://charts.kubementor.io/kubementor-agent-0.1.0.tgz
     version: 0.1.0
   kubementor-api:
   - apiVersion: v2
@@ -216,7 +216,7 @@ entries:
     - https://github.com/lbarahona/kubementor-platform
     type: application
     urls:
-    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-api-0.1.0.tgz
+    - https://charts.kubementor.io/kubementor-api-0.1.0.tgz
     version: 0.1.0
   kubementor-dashboard:
   - apiVersion: v2
@@ -227,6 +227,6 @@ entries:
     name: kubementor-dashboard
     type: application
     urls:
-    - https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages/kubementor-dashboard-0.1.0.tgz
+    - https://charts.kubementor.io/kubementor-dashboard-0.1.0.tgz
     version: 0.1.0
 generated: "2026-02-03T12:48:25.065119623-06:00"

@@ -6,7 +6,7 @@ Official Helm charts for [KubeMentor](https://kubementor.io) - AI-powered Kubern
 
 ```bash
 # Add the repo
-helm repo add kubementor https://raw.githubusercontent.com/lbarahona/kubementor-charts/gh-pages
+helm repo add kubementor https://charts.kubementor.io
 helm repo update
 
 # Install KubeMentor (all components)
